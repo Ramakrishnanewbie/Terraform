@@ -1,5 +1,4 @@
 # Terraform
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/Ramakrishnanewbie/Terraform)
 
 This repository provides a foundational Terraform configuration for provisioning resources on Google Cloud Platform (GCP). It serves as a practical example of Infrastructure as Code (IaC) principles, demonstrating how to manage cloud infrastructure declaratively.
 
