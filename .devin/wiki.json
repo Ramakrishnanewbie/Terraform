@@ -1,0 +1,162 @@
+{
+  "repo_notes": [
+    {
+      "content": "hi"
+    }
+  ],
+  "pages": [
+    {
+      "title": "Home",
+      "purpose": "Overview of the Terraform GCP infrastructure repository, its purpose, high-level architecture, and key components",
+      "page_notes": [
+        {
+          "content": "hi"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "purpose": "Guide for initial setup, prerequisites, and first-time deployment of the infrastructure",
+      "page_notes": [
+        {
+          "content": "hi"
+        }
+      ]
+    },
+    {
+      "title": "Core Configuration",
+      "purpose": "Overview of the foundational Terraform configuration components that establish the deployment environment",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Provider and Backend Configuration",
+      "purpose": "Detailed explanation of the Terraform provider setup and GCS backend configuration for state management (most critical component)",
+      "parent": "Core Configuration",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Variables and Locals",
+      "purpose": "Documentation of input variables and local values that configure the infrastructure deployment",
+      "parent": "Core Configuration",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "State Management",
+      "purpose": "Architecture and best practices for remote state storage, locking, and team collaboration",
+      "parent": "Core Configuration",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Infrastructure Resources",
+      "purpose": "Overview of the GCP resources provisioned by this Terraform configuration",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Service Accounts",
+      "purpose": "Identity management through GCP service accounts for Terraform operations and BigQuery access",
+      "parent": "Infrastructure Resources",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "BigQuery Datasets",
+      "purpose": "BigQuery dataset configuration, access control, and data lifecycle policies",
+      "parent": "Infrastructure Resources",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Storage and APIs",
+      "purpose": "Supporting infrastructure including GCS buckets and API configurations",
+      "parent": "Infrastructure Resources",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Outputs and Integration",
+      "purpose": "Exported values and interfaces for integrating deployed infrastructure with external systems",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Security Architecture",
+      "purpose": "Security model, IAM roles, access control patterns, and best practices for protecting sensitive data",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Development Workflow",
+      "purpose": "Overview of development practices, tooling, and automation for working with this repository",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Version Control Practices",
+      "purpose": "Git workflow, file exclusions, and best practices for managing Terraform code in version control",
+      "parent": "Development Workflow",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Provider Version Management",
+      "purpose": "Managing Terraform provider versions and ensuring consistent environments across team members",
+      "parent": "Development Workflow",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "CI/CD Automation",
+      "purpose": "GitHub Actions workflows and automation for documentation and deployment pipelines",
+      "parent": "Development Workflow",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    }
+  ]
+}
