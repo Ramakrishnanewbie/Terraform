@@ -1,0 +1,34 @@
+name: README AI Generator
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  generate-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Generate README with AI
+        uses: eli64s/readme-ai-action@v1
+        with:
+          repository: ${{ github.repository }}
+          output: README.md
+          api: gemini          # ✅ FREE
+          api-key: ${{ secrets.GEMINI_API_KEY }}
+          model: gemini-pro    # Optional: specify model
+      
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: 'docs: update README with AI'
+          title: 'Update README via AI'
+          branch: readme-ai-update
+          delete-branch: true
