@@ -1,3 +1,3 @@
 locals{
-  project_id = "tokyo-dispatch-475119-i4"
+  project_id = var.project_id
 }
