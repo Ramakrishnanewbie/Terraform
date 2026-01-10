@@ -10,3 +10,8 @@ resource "google_service_account" "bqowner" {
 resource "google_service_account" "bqowner_test" {
   account_id = "bqowner_test"
 }
+
+
+resource "google_service_account" "analytics_hub" {
+  account_id = "analytics_hub"
+}
