@@ -6,3 +6,7 @@ resource "google_service_account" "terraform-practice-service-account" {
 resource "google_service_account" "bqowner" {
   account_id = "bqowner"
 }
+
+resource "google_service_account" "bqowner_test" {
+  account_id = "bqowner_test"
+}
